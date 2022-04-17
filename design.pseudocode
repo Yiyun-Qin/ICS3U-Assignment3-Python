@@ -8,7 +8,9 @@ TRY
     width_integer = int(width_string)
     height_integer = int(height_string)
     volume = length_integer * weight_integer * height_integer
-    IF weight_integer <= 27 || volume <= 10000 THEN
+    IF weight_integer <= 0 || volume <= 0 THEN
+        SHOW "Please put in a positive integer!"
+    ELSEIF weight_integer <= 27 || volume <= 10000 THEN
         SHOW "Your package will be accepted."
     ELSEIF volume > 10000 && weight_integer <= 27 THEN
         SHOW "Your package is too large!"

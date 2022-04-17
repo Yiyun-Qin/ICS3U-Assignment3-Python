@@ -64,7 +64,7 @@
                 <mxCell id="6" value="Get the weight" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-250" y="370" width="100" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Check if weight &amp;gt; 27 and volume &amp;gt; 10000" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="11" value="Check if weight &amp;gt; 27 or volume &amp;gt; 10000" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="240" y="555" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="Show the result" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -81,6 +81,9 @@
                 </mxCell>
                 <mxCell id="27" value="Get the height" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="-120" y="460" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Check if weight &amp;lt;= 0 and volume &amp;lt;= 10000" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="555" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
