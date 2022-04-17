@@ -12,10 +12,6 @@ TRY
         SHOW "Please put in a positive integer!"
     ELSEIF weight_integer <= 27 || volume <= 10000 THEN
         SHOW "Your package will be accepted."
-    ELSEIF volume > 10000 && weight_integer <= 27 THEN
-        SHOW "Your package is too large!"
-    ELSEIF weight_integer > 27 && volume <= 10000 THEN
-        SHOW "Your package is too heavy!"
     ELSE
         SHOW "Your package is too heavy and too large!"
     ENDIF
