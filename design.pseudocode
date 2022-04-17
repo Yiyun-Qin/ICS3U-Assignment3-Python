@@ -1,13 +1,22 @@
-GET add_string
-GET loop_counter = 0
-GET answer = 0
+GET weight_string
+GET length_string
+GET width_string
+GET height_string
 TRY
-    add_integer = int(add_string)
-    WHILE loop_counter <= add_integer
-        answer = answer + loop_counter
-        loop_counter = loop_counter + 1
-    ENDWHILE
-    SHOW "TThe sum of all positive integers from 1 to add_string is answer."
+    weight_integer = int(weight_string)
+    length_integer = int(length_string)
+    width_integer = int(width_string)
+    height_integer = int(height_string)
+    volume = length_integer * weight_integer * height_integer
+    IF weight_integer <= 27 || volume <= 10000 THEN
+        SHOW "Your package will be accepted."
+    ELSEIF volume > 10000 && weight_integer <= 27 THEN
+        SHOW "Your package is too large!"
+    ELSEIF weight_integer > 27 && volume <= 10000 THEN
+        SHOW "Your package is too heavy!"
+    ELSE
+        SHOW "Your package is too heavy and too large!"
+    ENDIF
 EXCEPT Exception
     SHOW "Invalid number!"
 FINALLY
